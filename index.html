@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Information Form</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <form id="userForm">
-      <!-- <label for="lastname">Last Name:</label>
+      <label for="lastname">Last Name:</label>
       <input type="text" id="lastname" name="lastname" required />
 
       <label for="firstname">First Name:</label>
       <input type="text" id="firstname" name="firstname" required />
 
-      <label for="age">Age:</label> -->
-      <!-- <select name="age" id="age"></select> -->
+      <label for="age">Age:</label> 
+       <select name="age" id="age"></select>
 
       <label for="phone">Phone:</label>
       <input type="tel" id="phone" name="phone" required />
@@ -27,12 +28,31 @@
 
       <label for="repeatpass">Repeat Password:</label>
       <input type="password" id="repeatpass" name="repeatpass" required />
-
-      <button type="button" onclick="editForm()">Edit</button>
-      <button type="submit">Submit</button>
+      <div class="buttons">
+        <button type="button" onclick="editForm()">Edit</button>
+        <button type="submit">Submit</button>
+      </div>
     </form>
 
 
+
     <script src="src/secondPart.js"></script>
+
+    <table id="userTable" border="1">
+      <thead>
+        <tr>
+          <th>Last Name</th>
+          <th>First Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Repeat Password</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script type="module" src="src/thirdPart.js"></script>
+
   </body>
 </html>

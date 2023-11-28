@@ -1,17 +1,118 @@
+#userTable {
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  width: 60%; /* Adjust the width as needed */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow-x: auto; /* Enable horizontal scroll if needed */
+  background-color: rgba(0, 0, 0, 0.478);
+  padding: 20px;
+  border: none;
+}
+
+#userTable td,
+#userTable th {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 10px;
+  color: rgba(210, 210, 210, 0.8);
+}
+
+#userTable th{
+  color: rgba(66, 63, 63, 0.8);
+}
+
+#userTable tr:first-child th {
+  border-top: 0;
+  background-color: rgba(235, 231, 231, 0.811);
+}
+
+#userTable tr:last-child td {
+  border-bottom: 0;
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/img/black-background-with-red-gradient-smog-abstract-dark-purple-pastel-is-painted_29865-3329.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.478);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
+  color: rgba(210, 210, 210, 0.612);
+  margin-top: 12px;
 }
 
-input {
+input,
+select {
   margin-bottom: 10px;
+
+
+#userTable tr td:first-child,
+#userTable tr th:first-child {
+  border-left: 0;
+}
+
+#userTable tr td:last-child,
+#userTable tr th:last-child {
+  border-right: 0;
+}
+
+#userTable tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#userTable tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
-  margin-top: 10px;
+  flex: 1;
+  padding: 10px;
+  background-color: #af4c7c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
 }
+
+button:hover {
+  background-color: #a04591;
+}
+
+button:last-child {
+  margin-right: 0;
+}
+
+input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: 95%;
+}
+

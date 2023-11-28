@@ -1,46 +1,78 @@
 {
   "users": [
     {
-      "phone": "123456789",
-      "email": "anton@gmail.com",
-      "password": "npm i json-serve",
-      "repeatPassword": "const postData = async (url, data) => {   try {     const response = await fetch(url, {       method: 'POST',       headers: {         'Content-Type': 'application/json'       },       body: data     });     return response.json();   } catch (error) {     console.error('Error posting data:', error);     throw error;   } };  const fun = () => {   const form = document.getElementById('userForm'); // Updated form ID to 'userForm'    form.addEventListener('submit', async (e) => {     e.preventDefault();     const formData = new FormData(form);          // Extract specific values from the form data     const phone = formData.get('phone');     const email = formData.get('email');     const password = formData.get('pass'); // Changed to match the 'id' attribute of the password field     const repeatPassword = formData.get('repeatpass'); // Changed to match the 'id' attribute of the repeat password field      // Create an object with the extracted values     const postDataObject = {       phone,       email,       password,       repeatPassword     };      try {       const json = JSON.stringify(postDataObject);       console.log('Data to be sent:', json);        // Post the data to the specified URL       const response = await postData('http://localhost:3000/users', json);       console.log('Response from server:', response);     } catch (error) {       // Handle any errors that occur during the process       console.error('Error:', error);     }   }); };  fun();",
-      "id": 1
+      "id": 1,
+      "lastname": "Doe",
+      "firstname": "John",
+      "age": 30,
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "pass": "password123",
+      "repeatpass": "password123"
     },
     {
-      "phone": "123456789",
-      "email": "anton@gmail.com",
-      "password": "123456789",
-      "repeatPassword": "123456789",
-      "id": 2
+      "id": 2,
+      "lastname": "Smith",
+      "firstname": "Jane",
+      "age": 25,
+      "phone": "987-654-3210",
+      "email": "jane.smith@example.com",
+      "pass": "securepass456",
+      "repeatpass": "securepass456"
     },
     {
-      "phone": "1234567890",
-      "email": "anton@gmail.com",
-      "password": "npm i json-serve",
-      "repeatPassword": "const postData = async (url, data) => {   try {     const response = await fetch(url, {       method: 'POST',       headers: {         'Content-Type': 'application/json'       },       body: data     });     return response.json();   } catch (error) {     console.error('Error posting data:', error);     throw error;   } };  const fun = () => {   const form = document.getElementById('userForm'); // Updated form ID to 'userForm'    form.addEventListener('submit', async (e) => {     e.preventDefault();     const formData = new FormData(form);          // Extract specific values from the form data     const phone = formData.get('phone');     const email = formData.get('email');     const password = formData.get('pass'); // Changed to match the 'id' attribute of the password field     const repeatPassword = formData.get('repeatpass'); // Changed to match the 'id' attribute of the repeat password field      // Validate phone number     const phoneNumberPattern = /^12345\\d{4,}$/; // Change '12345' to the desired mask number     const isValidPhoneNumber = phoneNumberPattern.test(phone);      if (!isValidPhoneNumber || phone.length < 9) {       console.error('Invalid phone number.');       // Optionally, you can display an error message to the user here       return; // Prevent form submission if the phone number is invalid     }      // Validate email format     const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;     const isValidEmail = emailPattern.test(email);      if (!isValidEmail) {       console.error('Invalid email format.');       // Optionally, you can display an error message to the user here       return; // Prevent form submission if the email format is invalid     }      // Validate password length     if (password.length < 6) {       console.error('Password must be at least 6 characters long.');       // Optionally, you can display an error message to the user here       return; // Prevent form submission if the password is too short     }      // Create an object with the extracted values     const postDataObject = {       phone,       email,       password,       repeatPassword     };      try {       const json = JSON.stringify(postDataObject);       console.log('Data to be sent:', json);        // Post the data to the specified URL       const response = await postData('http://localhost:3000/users', json);       console.log('Response from server:', response);     } catch (error) {       // Handle any errors that occur during the process       console.error('Error:', error);     }   }); };  fun();",
-      "id": 3
+      "id": 3,
+      "lastname": "Johnson",
+      "firstname": "Robert",
+      "age": 35,
+      "phone": "555-123-4567",
+      "email": "robert.johnson@example.com",
+      "pass": "pass123",
+      "repeatpass": "pass123"
     },
     {
-      "phone": "1234567890",
-      "email": "anton@gmail.com",
-      "password": "123456789",
-      "repeatPassword": "123456789",
+      "users": [
+        {
+          "id": 1,
+          "lastname": "Doe",
+          "firstname": "John",
+          "age": 30,
+          "phone": "123-456-7890",
+          "email": "john.doe@example.com",
+          "pass": "password123",
+          "repeatpass": "password123"
+        },
+        {
+          "id": 2,
+          "lastname": "Smith",
+          "firstname": "Jane",
+          "age": 25,
+          "phone": "987-654-3210",
+          "email": "jane.smith@example.com",
+          "pass": "securepass456",
+          "repeatpass": "securepass456"
+        },
+        {
+          "id": 3,
+          "lastname": "Johnson",
+          "firstname": "Robert",
+          "age": 35,
+          "phone": "555-123-4567",
+          "email": "robert.johnson@example.com",
+          "pass": "pass123",
+          "repeatpass": "pass123"
+        },
+        {
+          "lastname": "Lastname",
+          "firstname": "Firstname",
+          "age": "13",
+          "phone": "123-456-7890",
+          "email": "john.doe@example.com",
+          "pass": "\tpassword123",
+          "repeatpass": "\tpassword123"
+        }
+      ],
       "id": 4
-    },
-    {
-      "phone": "+37369070041",
-      "email": "anton@gmail.com",
-      "password": "123456789",
-      "repeatPassword": "123456789",
-      "id": 5
-    },
-    {
-      "phone": "37369070041",
-      "email": "anton@gmail.com",
-      "password": "npm i json-serve",
-      "repeatPassword": "123456789",
-      "id": 6
     }
   ]
 }

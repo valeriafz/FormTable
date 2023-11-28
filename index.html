@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Information Form</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="#">
   </head>
   <body>
-    <form id="userForm">
+    <form id="userForm" onsubmit="submitForm(); return false;">
       <label for="lastname">Last Name:</label>
       <input
         type="text"
@@ -16,7 +17,6 @@
         required
         placeholder="Smith"
       />
-
       <label for="firstname">First Name:</label>
       <input
         type="text"
@@ -25,10 +25,8 @@
         placeholder="John"
         required
       />
-
       <label for="age">Age:</label> 
        <select name="age" id="age" required></select>
-
       <label for="phone">Phone:</label>
       <input
         type="tel"
@@ -37,7 +35,6 @@
         placeholder="+373 9999 9999"
         required
       />
-
       <label for="email">Email:</label>
       <input
         type="email"
@@ -46,7 +43,6 @@
         placeholder="johnsmith24@gmail.com"
         required
       />
-
       <label for="pass">Password:</label>
       <input
         type="password"
@@ -66,17 +62,13 @@
       />
       <div class="buttons">
         <button type="button" onclick="editForm()">Edit</button>
-        <button type="submit" onclick="submitForm()">Submit</button>
+        <button type="submit">Submit</button>
       </div>
     </form>
-
-
-
-    <script src="src/secondPart.js"></script>
-
     <table id="userTable" border="1">
       <thead>
         <tr>
+          <th>Id</th>
           <th>Last Name</th>
           <th>First Name</th>
           <th>Age</th>
@@ -90,6 +82,7 @@
     </table>
     <script src="src/firstPart.js"></script>
     <script src="src/secondPart.js"></script>
-    <script type="module" src="src/thirdPart.js"></script>
+    <script type="module" src="src/outputUsers.js"></script>
+    <script src="/src/addusers.js"></script>
   </body>
 </html>

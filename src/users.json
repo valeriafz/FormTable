@@ -73,6 +73,101 @@
         }
       ],
       "id": 4
+    },
+    {
+      "phone": "+37360780034",
+      "email": "valeria.frunza33@gmail.com",
+      "password": "123456",
+      "repeatPassword": "123456",
+      "id": 5
+    },
+    {
+      "users": [
+        {
+          "id": 1,
+          "lastname": "Doe",
+          "firstname": "John",
+          "age": 30,
+          "phone": "123-456-7890",
+          "email": "john.doe@example.com",
+          "pass": "password123",
+          "repeatpass": "password123"
+        },
+        {
+          "id": 2,
+          "lastname": "Smith",
+          "firstname": "Jane",
+          "age": 25,
+          "phone": "987-654-3210",
+          "email": "jane.smith@example.com",
+          "pass": "securepass456",
+          "repeatpass": "securepass456"
+        },
+        {
+          "id": 3,
+          "lastname": "Johnson",
+          "firstname": "Robert",
+          "age": 35,
+          "phone": "555-123-4567",
+          "email": "robert.johnson@example.com",
+          "pass": "pass123",
+          "repeatpass": "pass123"
+        },
+        {
+          "users": [
+            {
+              "id": 1,
+              "lastname": "Doe",
+              "firstname": "John",
+              "age": 30,
+              "phone": "123-456-7890",
+              "email": "john.doe@example.com",
+              "pass": "password123",
+              "repeatpass": "password123"
+            },
+            {
+              "id": 2,
+              "lastname": "Smith",
+              "firstname": "Jane",
+              "age": 25,
+              "phone": "987-654-3210",
+              "email": "jane.smith@example.com",
+              "pass": "securepass456",
+              "repeatpass": "securepass456"
+            },
+            {
+              "id": 3,
+              "lastname": "Johnson",
+              "firstname": "Robert",
+              "age": 35,
+              "phone": "555-123-4567",
+              "email": "robert.johnson@example.com",
+              "pass": "pass123",
+              "repeatpass": "pass123"
+            },
+            {
+              "lastname": "Lastname",
+              "firstname": "Firstname",
+              "age": "13",
+              "phone": "123-456-7890",
+              "email": "john.doe@example.com",
+              "pass": "\tpassword123",
+              "repeatpass": "\tpassword123"
+            }
+          ],
+          "id": 4
+        },
+        {
+          "lastname": "Brasovean",
+          "firstname": "Ion",
+          "age": "15",
+          "phone": "+37360780034",
+          "email": "valeria.frunza33@gmail.com",
+          "pass": "123456",
+          "repeatpass": "123456"
+        }
+      ],
+      "id": 6
     }
   ]
 }

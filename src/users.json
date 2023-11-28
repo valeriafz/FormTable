@@ -19,6 +19,16 @@
       "password": "daf@gmail.com",
       "repeatPassword": "daf@gmail.com",
       "id": 2
+    },
+    {
+      "lastname": "Dfdaf",
+      "firstname": "Dfasdf",
+      "age": "17",
+      "phone": "+32234324",
+      "email": "sadfklasf@gmail.com",
+      "password": "password",
+      "repeatPassword": "password",
+      "id": 3
     }
   ]
 }

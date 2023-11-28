@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "lastname": "Doe",
+      "firstname": "John",
+      "age": 30,
+      "phone": "123-456-7890",
+      "email": "john.doe@example.com",
+      "pass": "password123",
+      "repeatpass": "password123"
+    },
+    {
+      "lastname": "Smith",
+      "firstname": "Jane",
+      "age": 25,
+      "phone": "987-654-3210",
+      "email": "jane.smith@example.com",
+      "pass": "securepass456",
+      "repeatpass": "securepass456"
+    },
+    {
+      "lastname": "Johnson",
+      "firstname": "Robert",
+      "age": 35,
+      "phone": "555-123-4567",
+      "email": "robert.johnson@example.com",
+      "pass": "pass123",
+      "repeatpass": "pass123"
+    }
+  ]
+}

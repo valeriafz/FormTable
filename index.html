@@ -9,25 +9,61 @@
   <body>
     <form id="userForm">
       <label for="lastname">Last Name:</label>
-      <input type="text" id="lastname" name="lastname" required />
+      <input
+        type="text"
+        id="lastname"
+        name="lastname"
+        required
+        placeholder="Smith"
+      />
 
       <label for="firstname">First Name:</label>
-      <input type="text" id="firstname" name="firstname" required />
+      <input
+        type="text"
+        id="firstname"
+        name="firstname"
+        placeholder="John"
+        required
+      />
 
       <label for="age">Age:</label>
       <select name="age" id="age"></select>
 
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="+373 9999 9999"
+        required
+      />
 
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="johnsmith24@gmail.com"
+        required
+      />
 
       <label for="pass">Password:</label>
-      <input type="password" id="pass" name="pass" required />
+      <input
+        type="password"
+        id="pass"
+        name="pass"
+        placeholder="********"
+        required
+      />
 
       <label for="repeatpass">Repeat Password:</label>
-      <input type="password" id="repeatpass" name="repeatpass" required />
+      <input
+        type="password"
+        id="repeatpass"
+        name="repeatpass"
+        placeholder="********"
+        required
+      />
       <div class="buttons">
         <button type="button" onclick="editForm()">Edit</button>
         <button type="submit">Submit</button>

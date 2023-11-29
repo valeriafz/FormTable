@@ -9,7 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     })
     .catch(error => console.error('Error fetching data:', error));
+
+  // Moved the event listener for delete buttons here
+  document.querySelectorAll('#userTable tbody').forEach(tbody => {
+    tbody.addEventListener('click', event => {
+      const deleteButton = event.target.closest('button[data-action="delete"]');
+      if (deleteButton) {
+        const userId = deleteButton.dataset.userId;
+        deleteUser(userId);
+      }
+    });
+  });
 });
+
 
 const createDeleteButton = (userId) => {
   const deleteButton = document.createElement('button');
@@ -130,17 +142,27 @@ function saveChanges(user, editForm) {
 }
 
 const deleteUser = (userId) => {
-  // Send a request to delete the user on the server
   fetch(`http://localhost:3000/users/${userId}`, {
     method: 'DELETE',
   })
   .then(() => {
-    // Remove the row from the table
     const row = tableBody.querySelector(`tr[data-id="${userId}"]`);
     if (row) {
       row.remove();
       console.log(`User with ID ${userId} deleted successfully.`);
+      reindexUsers();
     }
   })
   .catch(error => console.error('Error deleting user:', error));
+};
+
+const reindexUsers = () => {
+  const tableRows = document.querySelectorAll('#userTable tbody tr');
+  tableRows.forEach((row, index) => {
+    const userIdCell = row.cells[0];
+    if (userIdCell) {
+      userIdCell.textContent = index + 1;
+      row.dataset.id = index + 1;
+    }
+  });
 };

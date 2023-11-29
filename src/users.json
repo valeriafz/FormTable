@@ -1,34 +1,14 @@
 {
   "users": [
     {
-      "lastname": "Adfsaf",
-      "firstname": "Dafsdfsaf",
-      "age": "15",
-      "phone": "+34324244",
-      "email": "daf@gmail.com",
-      "password": "daf@gmail.com",
-      "repeatPassword": "daf@gmail.com",
-      "id": 2
-    },
-    {
-      "lastname": "Dfdaf",
-      "firstname": "Dfasdf",
-      "age": "17",
-      "phone": "+32234324",
-      "email": "sadfklasf@gmail.com",
+      "lastname": "Adfasfasff",
+      "firstname": "Dafdsfasf",
+      "age": "20",
+      "phone": "+34324324324",
+      "email": "adfdasf@gmai.com",
       "password": "password",
       "repeatPassword": "password",
-      "id": 3
-    },
-    {
-      "lastname": "Adfasf",
-      "firstname": "Dafdsf",
-      "age": "20",
-      "phone": "+34324324",
-      "email": "adfsaf@gmail.com",
-      "password": "adfsaf@gmail.com",
-      "repeatPassword": "adfsaf@gmail.com",
-      "id": 4
+      "id": 1
     }
   ]
 }

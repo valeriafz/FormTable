@@ -1,16 +1,6 @@
 {
   "users": [
     {
-      "lastname": "Doeeee",
-      "firstname": "John",
-      "age": 23,
-      "phone": "+34324324",
-      "email": "john.doe@example.com",
-      "password": "john.doe@example.com",
-      "repeatPassword": "john.doe@example.com",
-      "id": 1
-    },
-    {
       "lastname": "Adfsaf",
       "firstname": "Dafsdfsaf",
       "age": "15",

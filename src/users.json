@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "lastname": "Doe",
+      "lastname": "Doeeee",
       "firstname": "John",
       "age": 23,
       "phone": "+34324324",
@@ -29,6 +29,16 @@
       "password": "password",
       "repeatPassword": "password",
       "id": 3
+    },
+    {
+      "lastname": "Adfasf",
+      "firstname": "Dafdsf",
+      "age": "20",
+      "phone": "+34324324",
+      "email": "adfsaf@gmail.com",
+      "password": "adfsaf@gmail.com",
+      "repeatPassword": "adfsaf@gmail.com",
+      "id": 4
     }
   ]
 }
